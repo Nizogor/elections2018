@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AdV-Nr-Pjm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register Fraud View Controller-->
+        <scene sceneID="aB9-UF-TD6">
+            <objects>
+                <viewController id="AdV-Nr-Pjm" customClass="RegisterFraudViewController" customModule="Elections2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ATt-sA-GM3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-LU-5uj">
+                                <rect key="frame" x="20" y="104" width="335" height="479"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <connections>
+                                    <outlet property="delegate" destination="AdV-Nr-Pjm" id="QjG-b5-xp6"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKQ-81-w42">
+                                <rect key="frame" x="20" y="40" width="63" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Don-5a-EpK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Назад"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvW-gE-1Tz">
+                                <rect key="frame" x="20" y="603" width="335" height="44"/>
+                                <color key="backgroundColor" red="0.89837299140000004" green="1" blue="0.6192023498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fED-Lu-tad"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Добавить">
+                                    <color key="titleColor" red="1" green="0.36862745099999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uxD-US-YYP" firstAttribute="trailing" secondItem="Dqk-LU-5uj" secondAttribute="trailing" constant="20" id="0eY-39-i4j"/>
+                            <constraint firstItem="uxD-US-YYP" firstAttribute="bottom" secondItem="zvW-gE-1Tz" secondAttribute="bottom" constant="20" id="0lz-V4-Acr"/>
+                            <constraint firstItem="Dqk-LU-5uj" firstAttribute="leading" secondItem="uxD-US-YYP" secondAttribute="leading" constant="20" id="333-fa-bYL"/>
+                            <constraint firstItem="xKQ-81-w42" firstAttribute="top" secondItem="uxD-US-YYP" secondAttribute="top" constant="20" id="8Rc-LQ-ngz"/>
+                            <constraint firstItem="Dqk-LU-5uj" firstAttribute="centerX" secondItem="uxD-US-YYP" secondAttribute="centerX" id="SMa-dL-T2q"/>
+                            <constraint firstItem="uxD-US-YYP" firstAttribute="trailing" secondItem="zvW-gE-1Tz" secondAttribute="trailing" constant="20" id="beu-Zt-9io"/>
+                            <constraint firstItem="zvW-gE-1Tz" firstAttribute="top" secondItem="Dqk-LU-5uj" secondAttribute="bottom" constant="20" id="fhu-Vq-ZKi"/>
+                            <constraint firstItem="xKQ-81-w42" firstAttribute="leading" secondItem="uxD-US-YYP" secondAttribute="leading" constant="20" id="gF1-Gk-VG7"/>
+                            <constraint firstItem="zvW-gE-1Tz" firstAttribute="leading" secondItem="uxD-US-YYP" secondAttribute="leading" constant="20" id="gf2-IB-eDx"/>
+                            <constraint firstItem="Dqk-LU-5uj" firstAttribute="top" secondItem="xKQ-81-w42" secondAttribute="bottom" constant="20" id="sSK-Qr-wyG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uxD-US-YYP"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="xKQ-81-w42" id="3D2-o1-1Ep"/>
+                        <outlet property="confirmationButton" destination="zvW-gE-1Tz" id="wxp-tU-Vgz"/>
+                        <outlet property="textField" destination="Dqk-LU-5uj" id="Meg-93-a0a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAw-Gb-0TN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113" y="33"/>
+        </scene>
+    </scenes>
+</document>

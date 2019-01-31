@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aym-IX-6RB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Visitors View Controller-->
+        <scene sceneID="9Gh-j1-6dr">
+            <objects>
+                <viewController id="aym-IX-6RB" customClass="VisitorsViewController" customModule="Elections2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P1J-jW-q0k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jca-M8-M1j">
+                                <rect key="frame" x="20" y="40" width="63" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WiU-qv-71l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Назад"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sU6-DU-mEm">
+                                <rect key="frame" x="20" y="104" width="335" height="563"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jca-M8-M1j" firstAttribute="top" secondItem="buu-bD-msu" secondAttribute="top" constant="20" id="1Ew-HF-Grc"/>
+                            <constraint firstItem="buu-bD-msu" firstAttribute="bottom" secondItem="sU6-DU-mEm" secondAttribute="bottom" id="66E-6c-iSH"/>
+                            <constraint firstItem="sU6-DU-mEm" firstAttribute="top" secondItem="jca-M8-M1j" secondAttribute="bottom" constant="20" id="IUF-02-bZO"/>
+                            <constraint firstItem="buu-bD-msu" firstAttribute="trailing" secondItem="sU6-DU-mEm" secondAttribute="trailing" constant="20" id="P7W-aq-E2h"/>
+                            <constraint firstItem="sU6-DU-mEm" firstAttribute="leading" secondItem="buu-bD-msu" secondAttribute="leading" constant="20" id="PDO-AI-JAI"/>
+                            <constraint firstItem="jca-M8-M1j" firstAttribute="leading" secondItem="buu-bD-msu" secondAttribute="leading" constant="20" id="bOt-Xr-yby"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="buu-bD-msu"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="jca-M8-M1j" id="30t-JY-pIa"/>
+                        <outlet property="tableView" destination="sU6-DU-mEm" id="S7T-eZ-if2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1m-ki-C0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33" y="807"/>
+        </scene>
+    </scenes>
+</document>

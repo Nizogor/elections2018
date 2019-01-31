@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ArC-kZ-som">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Frauds View Controller-->
+        <scene sceneID="NUc-vD-gRi">
+            <objects>
+                <viewController id="ArC-kZ-som" customClass="FraudsViewController" customModule="Elections2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ufm-dP-9JP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlK-Y0-1Gp">
+                                <rect key="frame" x="20" y="40" width="63" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ggq-dF-5Wb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Назад"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cBa-0y-Dr7">
+                                <rect key="frame" x="20" y="104" width="335" height="563"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cBa-0y-Dr7" firstAttribute="top" secondItem="QlK-Y0-1Gp" secondAttribute="bottom" constant="20" id="4PN-1J-dVa"/>
+                            <constraint firstItem="XMV-z0-cUS" firstAttribute="bottom" secondItem="cBa-0y-Dr7" secondAttribute="bottom" id="RZR-Od-Heo"/>
+                            <constraint firstItem="QlK-Y0-1Gp" firstAttribute="top" secondItem="XMV-z0-cUS" secondAttribute="top" constant="20" id="jRF-H9-k0u"/>
+                            <constraint firstItem="cBa-0y-Dr7" firstAttribute="leading" secondItem="XMV-z0-cUS" secondAttribute="leading" constant="20" id="xC1-E0-ptO"/>
+                            <constraint firstItem="QlK-Y0-1Gp" firstAttribute="leading" secondItem="XMV-z0-cUS" secondAttribute="leading" constant="20" id="zJK-qx-YAs"/>
+                            <constraint firstItem="XMV-z0-cUS" firstAttribute="trailing" secondItem="cBa-0y-Dr7" secondAttribute="trailing" constant="20" id="zbr-jr-Bqc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XMV-z0-cUS"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="QlK-Y0-1Gp" id="AZ0-dl-uWr"/>
+                        <outlet property="tableView" destination="cBa-0y-Dr7" id="XNH-E5-NwR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CcH-gz-gSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="806"/>
+        </scene>
+    </scenes>
+</document>
