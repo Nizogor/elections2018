@@ -323,8 +323,6 @@
 				587595F622023D6B00F6F129 /* DependencyContainer */,
 				587595F522023D6600F6F129 /* Coordinator */,
 				5890E6802202710D00A20AB4 /* Counter */,
-				587595F422023D6100F6F129 /* ViewController */,
-				587595F322023D5C00F6F129 /* ViewModel */,
 				5890E6812202712B00A20AB4 /* Visits */,
 				58337BC52202F95300BC9D81 /* Frauds */,
 				58337BD32202FC3000BC9D81 /* RegisterFraud */,
@@ -410,6 +408,8 @@
 		5890E6802202710D00A20AB4 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
+				587595F422023D6100F6F129 /* ViewController */,
+				587595F322023D5C00F6F129 /* ViewModel */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
